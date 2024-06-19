@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif,Poppins;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(90deg, rgba(74,86,249,1) 0%, rgba(223,115,241,1) 100%);
+    color: #fff;
+    padding: 10px;
+    
+    
+}
+
+.calculator{
+    width: 100%;
+    max-width: 60px;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.calculator h1{
+    font-size: 60px;
+}
+.calculator h1 span{
+    color: yellow;
+}
+
+.input-box{
+    width: 100vh;
+    margin: 40px 0;
+    padding: 35px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.3);
+    display: inline-flex;
+    align-items: center;
+}
+.input-box input{
+    flex: 1;
+    margin-right: 20px;
+    padding: 14px 20px;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.input-box button{
+    background: yellow;
+    border: 0;
+    outline: 0;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #242323;
+    cursor: pointer;
+}
+
+.output-wrapper{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 135px;
+}
+
+.output-wrapper div{
+    height: 6.25em;
+    width: 6.25em;;
+    background-color: #ffffff;
+    color: black;
+    border-radius: 0.31em;
+    display: grid;
+    place-items: center;
+    padding: 1.25em 0;
+    box-shadow: 0 0.93em rgba(0,0,0,0.31);
+}
+span{
+    font-size: 1.87em;
+    font-weight: 500;
+}
+p{
+    font-size: 0.87em;
+    color: #414040;
+    font-weight: 400;
+}
+
+
+
+@media (max-width: 1200px) {
+    .calculator {
+         max-width: 400px;
+         margin-left: 20%;
+     }
+    .input-box {
+         width: 80vh;
+     }
+    .output-wrapper {
+         grid-gap: 80px;
+     }
+    .output-wrapper div {
+         height: 5em;
+         width: 5em;
+     }
+ }
+ 
+
+ @media (max-width: 900px) {
+    .calculator {
+         max-width: 300px;
+         margin-left: 25%;
+     }
+    .input-box {
+         width: 60vh;
+     }
+    .output-wrapper {
+         grid-gap: 50px;
+     }
+    .output-wrapper div {
+         height: 4em;
+         width: 4em;
+     }
+ }
+ 
+
+ @media (max-width: 600px) {
+    .calculator {
+         max-width: 200px;
+         margin-left: 30%;
+     }
+    .input-box {
+         width: 40vh;
+     }
+    .output-wrapper {
+         grid-template-columns: 1fr 1fr;
+         grid-gap: 20px;
+     }
+    .output-wrapper div {
+         height: 3em;
+         width: 3em;
+     }
+ }
+ 
+
+ @media (max-width: 400px) {
+    .calculator {
+         max-width: 150px;
+         margin-left: 35%;
+     }
+    .input-box {
+         width: 30vh;
+     }
+    .output-wrapper {
+         grid-template-columns: 1fr;
+         grid-gap: 10px;
+     }
+    .output-wrapper div {
+         height: 2em;
+         width: 2em;
+     }
+ }
